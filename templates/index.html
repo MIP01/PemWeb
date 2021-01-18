@@ -1,0 +1,24 @@
+{% extends 'test.html' %}
+
+
+{% block konten %}
+    <table class="table table-bordered table-hover">
+        <thead>
+        <tr>
+            <th>UID</th>
+            <th>Name</th>
+            <th>Design Request</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for row in hasil %}
+                <tr>
+                    <td>{{row.0}}</td>
+                    <td>{{row.1}}</td>
+                    <td>{{row.2}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
+

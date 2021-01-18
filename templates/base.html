@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- CSS area -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/db/bootstrap.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/db/font-awesome.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/db/ionicons.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/db/dataTables.bootstrap.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/db/AdminLTE.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/db/_all-skins.min.css')}}">
+
+    <!-- CSS font area -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='font/sansPro.css')}}">
+</head>
+
+<body>
+<!-- content area -->
+    <div class="content-wrapper">
+        <section class="content-header">
+            <h1>
+                {% block Judul %} {% endblock %}
+            </h1>
+        </section>
+        <section class="content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="box">
+							  {% block JudulKonten %} {% endblock %}
+
+                        <!-- data table (database) area -->
+                        <div class="box-body">
+                            {% block konten %} {% endblock %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+<!-- Javascript area -->
+<script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery.dataTables.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/dataTables.bootstrap.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery.slimscroll.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/fastclick.js')}}"></script>
+<script src="{{url_for('static', filename='js/adminlte.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/demo.js')}}"></script>
+
+
+</body>
+</html>
+

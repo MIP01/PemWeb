@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block Judul %} ADMIN PAGE {% endblock %}
+
+{% block JudulKonten %}
+    <a href="/home/" class="btn btn-primary"> Back to Home </a>
+{% endblock %}
+
+{% block konten %}
+    <table class="table table-bordered table-hover">
+        <thead>
+        <tr>
+            <th>UID</th>
+            <th>Name</th>
+            <th>Design Request</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for row in hasil %}
+                <tr>
+                    <td>{{row.0}}</td>
+                    <td>{{row.1}}</td>
+                    <td>{{row.2}}</td>
+                    <td>
+                        <a href="/ubah/{{row.0}}" class="btn btn-warning"> Change </a>
+                        <a href="/hapus/{{row.0}}" class="btn btn-danger"
+                            onclick="return confirm('yakin akan menghapus {{row.1}} ?')"> Delete </a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
+

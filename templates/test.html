@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/mls.css')}}">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">  
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#section1">HOME</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#section2">ABOUT</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#section3">GALLERY</a>
+    </li>
+	 <li class="nav-item">
+      <a class="nav-link" href="#section4">DATA</a>
+    </li>
+	 <li class="nav-item">
+      <a class="nav-link" href="/del/">ADMIN PAGE</a>
+    </li>
+
+  </ul>
+</nav>
+<div id="section1" class="container-fluid bg-image img1" style="padding-top:70px;padding-bottom:70px">	
+			<div class="content">
+				<img src="{{url_for('static', filename='img/foto.jpg')}}" width="200" height="200" style="border-radius: 50%;"/>
+			</div>
+			<div class="title">
+				<h1>MUHAMMAD ILHAM PRADANTO</h1>
+			</div>
+			<div class="menu">
+				<a href="https://www.facebook.com/ilham.pradanto" class="fa fa-facebook"></a>
+				<a href="https://www.instagram.com/muhilhamp01/" class="fa fa-instagram"></a>
+				<a href="https://www.youtube.com/channel/UCQM_-xUx6g0mJSAvkHREcNA" class="fa fa-youtube"></a>
+				<a href="#" class="fa fa-google"></a>
+			</div>
+</div>
+<div id="section2" class="container-fluid bg-white" style="padding-top:70px;padding-bottom:70px">
+<div class="table">
+<table>
+	<tr>
+		<th rowspan="9" width="300px"><div class="flip-card">
+			<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="{{url_for('static', filename='img/foto.jpg')}}" alt="Avatar" style="width:300px;height:300px;">
+    				</div>
+					<div class="flip-card-back">
+      				<h1>Description</h1> 
+      				<p>Web Developer pemula</p> 
+      				<p>perancangan web dengan Flask, html, css, bootstrap, java script</p>
+    				</div>
+  				</div>		
+			</div></th>
+    </tr>
+        <tr>
+            <td>NIM</td>
+            <td>:</td>
+            <td>19.83.0421</td>
+        </tr>
+        <tr>
+            <td>Nama</td>
+            <td>:</td>
+            <td>Muhammad Ilham Pradanto</td>
+        </tr>
+        <tr>
+            <td>Prodi</td>
+            <td>:</td>
+            <td>S1-Teknik Komputer</td>
+        </tr>
+        <tr>
+            <td>Kelas</td>
+            <td>:</td>
+            <td>TK02</td>
+        </tr>
+        <tr>
+            <td>No Hp</td>
+            <td>:</td>
+            <td>082247776646</td>
+        </tr>
+        <tr>
+            <td width="100px">Email Amikom</td>
+            <td>:</td>
+            <td><a href="mailto:muhammad.pradanto@students.amikom.ac.id">muhammad.pradanto@students.amikom.ac.id</a></td>
+        </tr>
+    </table>
+	</div>
+<h2>My Skills</h2>
+<p style="color: black">HTML</p>
+<div class="container">
+  <div class="skills html">90%</div>
+</div>
+
+<p style="color: black">CSS</p>
+<div class="container">
+  <div class="skills css">80%</div>
+</div>
+
+<p style="color: black">JavaScript</p>
+<div class="container">
+  <div class="skills js">65%</div>
+</div>
+
+<p style="color: black">PHP</p>
+<div class="container">
+  <div class="skills php">60%</div>
+</div>
+</div>
+<div id="section3" class="container-fluid bg-white" style="padding-top:70px;padding-bottom:70px">
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{{url_for('static', filename='img/mate0.jpg')}}" alt="Los Angeles">
+      <div class="carousel-caption">
+        <h3>Scenery Vector</h3>
+        <p>GRAPHIC DESIGN</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="{{url_for('static', filename='img/mate1.jpg')}}" alt="Chicago">
+      <div class="carousel-caption">
+        <h3>Bird Silhouette Vector</h3>
+        <p>GRAPHIC DESIGN</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="{{url_for('static', filename='img/mate2.jpg')}}" alt="New York">
+      <div class="carousel-caption">
+        <h3>Deer Art Vector</h3>
+        <p>GRAPHIC DESIGN</p>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</div>
+<div id="section4" class="container-fluid bg-white" style="padding-top:20px;padding-bottom:70px">
+<h2>Request Page</h2>
+<br>
+{% block JudulKonten %}
+    <a href="/tambah/" class="btn btn-primary"> Add Request </a>
+{% endblock %}
+{% block konten %} {% endblock %}
+</div>
+</body>
+</html>
